@@ -19,11 +19,11 @@ file_path = "test.mp3"  # میتونی jpg یا mp3 باشه
 hash_value = get_upload_hash()
 
 if not hash_value:
-	print("❌ خطا: مقدار هش یافت نشد!")
-	exit()
+    print("❌ Error: Hash value not found!")
+    exit()
 else:
-	print("✅ هش دریافت شد:", hash_value)
-
+    print("✅ Hash received: ", hash_value)
+	
 # تنظیم مدت زمان برای 1 روز (86400 ثانیه)
 data = {
 	"hash": hash_value,
